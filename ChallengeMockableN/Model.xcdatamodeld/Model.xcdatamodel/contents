@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16E195" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="StadiumEntity" representedClassName="StadiumEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="seCity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="seId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="seImage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="seName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="seShortDesc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="seUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="seWordCupInfo" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="WorldCupEntity" inverseName="wceWordCupInfo" inverseEntity="WorldCupEntity" syncable="YES"/>
+    </entity>
+    <entity name="WorldCupEntity" representedClassName="WorldCupEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="wceCapacity" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="wceGames" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="wceMostImpGame" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="wceWordCupInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StadiumEntity" inverseName="seWordCupInfo" inverseEntity="StadiumEntity" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="StadiumEntity" positionX="-0" positionY="-54" width="128" height="148"/>
+        <element name="WorldCupEntity" positionX="189" positionY="27" width="128" height="103"/>
+    </elements>
+</model>
