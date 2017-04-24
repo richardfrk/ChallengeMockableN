@@ -9,14 +9,19 @@
 /* Begin PBXBuildFile section */
 		010790EA1EAD06AC001300BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010790E91EAD06AC001300BD /* AppDelegate.swift */; };
 		010790EF1EAD06AC001300BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 010790ED1EAD06AC001300BD /* Main.storyboard */; };
-		010790F21EAD06AC001300BD /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 010790F01EAD06AC001300BD /* Model.xcdatamodeld */; };
 		010790F41EAD06AC001300BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 010790F31EAD06AC001300BD /* Assets.xcassets */; };
 		010790F71EAD06AC001300BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 010790F51EAD06AC001300BD /* LaunchScreen.storyboard */; };
 		010791001EAD07F1001300BD /* StadiumTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010790FF1EAD07F1001300BD /* StadiumTableViewController.swift */; };
 		010791041EAD0856001300BD /* MockableAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010791031EAD0856001300BD /* MockableAPI.swift */; };
-		019B4C781EAD09BE0072C721 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019B4C771EAD09BE0072C721 /* AppConstants.swift */; };
+		016B34C31EAEB9F2005066E7 /* StadiumWorldCupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B34C21EAEB9F2005066E7 /* StadiumWorldCupTableViewCell.swift */; };
+		016B34C51EAEBC60005066E7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B34C41EAEBC60005066E7 /* LoginViewController.swift */; };
+		016B34C71EAEC084005066E7 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B34C61EAEC084005066E7 /* UserModel.swift */; };
+		016B34CA1EAEC488005066E7 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B34C91EAEC488005066E7 /* AlertHelper.swift */; };
+		016B34CC1EAEC54C005066E7 /* StadiumDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B34CB1EAEC54C005066E7 /* StadiumDetailModel.swift */; };
+		016B34CE1EAEC678005066E7 /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B34CD1EAEC678005066E7 /* RealmHelper.swift */; };
+		019B4C781EAD09BE0072C721 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019B4C771EAD09BE0072C721 /* AppConstant.swift */; };
 		019B4C7A1EAD0C3B0072C721 /* StadiumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019B4C791EAD0C3B0072C721 /* StadiumTableViewCell.swift */; };
-		019B4C7C1EAD0E330072C721 /* StadiumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019B4C7B1EAD0E330072C721 /* StadiumModel.swift */; };
+		01C69ADA1EAEAD8D0071D0B8 /* StadiumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C69AD91EAEAD8D0071D0B8 /* StadiumModel.swift */; };
 		6D3D9237C7AC9E5B2388FE2C /* Pods_ChallengeMockableN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A7803C7AAA35584BFAD41C /* Pods_ChallengeMockableN.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,15 +29,20 @@
 		010790E61EAD06AC001300BD /* ChallengeMockableN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeMockableN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		010790E91EAD06AC001300BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		010790EE1EAD06AC001300BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		010790F11EAD06AC001300BD /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		010790F31EAD06AC001300BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		010790F61EAD06AC001300BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		010790F81EAD06AC001300BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		010790FF1EAD07F1001300BD /* StadiumTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StadiumTableViewController.swift; path = Controller/StadiumTableViewController.swift; sourceTree = "<group>"; };
 		010791031EAD0856001300BD /* MockableAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockableAPI.swift; path = Network/MockableAPI.swift; sourceTree = "<group>"; };
-		019B4C771EAD09BE0072C721 /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		016B34C21EAEB9F2005066E7 /* StadiumWorldCupTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StadiumWorldCupTableViewCell.swift; path = View/StadiumWorldCupTableViewCell.swift; sourceTree = "<group>"; };
+		016B34C41EAEBC60005066E7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Controller/LoginViewController.swift; sourceTree = "<group>"; };
+		016B34C61EAEC084005066E7 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserModel.swift; path = Model/UserModel.swift; sourceTree = "<group>"; };
+		016B34C91EAEC488005066E7 /* AlertHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertHelper.swift; path = Helper/AlertHelper.swift; sourceTree = "<group>"; };
+		016B34CB1EAEC54C005066E7 /* StadiumDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StadiumDetailModel.swift; path = Model/StadiumDetailModel.swift; sourceTree = "<group>"; };
+		016B34CD1EAEC678005066E7 /* RealmHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmHelper.swift; path = Helper/RealmHelper.swift; sourceTree = "<group>"; };
+		019B4C771EAD09BE0072C721 /* AppConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
 		019B4C791EAD0C3B0072C721 /* StadiumTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StadiumTableViewCell.swift; path = View/StadiumTableViewCell.swift; sourceTree = "<group>"; };
-		019B4C7B1EAD0E330072C721 /* StadiumModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StadiumModel.swift; path = Model/StadiumModel.swift; sourceTree = "<group>"; };
+		01C69AD91EAEAD8D0071D0B8 /* StadiumModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StadiumModel.swift; path = Model/StadiumModel.swift; sourceTree = "<group>"; };
 		29DBBFE6F2F885CBD2AC1E1B /* Pods-ChallengeMockableN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeMockableN.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChallengeMockableN/Pods-ChallengeMockableN.release.xcconfig"; sourceTree = "<group>"; };
 		43A7803C7AAA35584BFAD41C /* Pods_ChallengeMockableN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeMockableN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60CD2D3E1FAB4A9F4C4FC14E /* Pods-ChallengeMockableN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeMockableN.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChallengeMockableN/Pods-ChallengeMockableN.debug.xcconfig"; sourceTree = "<group>"; };
@@ -71,6 +81,7 @@
 		010790E81EAD06AC001300BD /* ChallengeMockableN */ = {
 			isa = PBXGroup;
 			children = (
+				016B34C81EAEC463005066E7 /* Helper */,
 				010791021EAD081F001300BD /* Network */,
 				010791061EAD088D001300BD /* Model */,
 				010791051EAD0881001300BD /* View */,
@@ -83,7 +94,7 @@
 		010790FE1EAD074D001300BD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				019B4C771EAD09BE0072C721 /* AppConstants.swift */,
+				019B4C771EAD09BE0072C721 /* AppConstant.swift */,
 				010790E91EAD06AC001300BD /* AppDelegate.swift */,
 				010790F31EAD06AC001300BD /* Assets.xcassets */,
 				010790F51EAD06AC001300BD /* LaunchScreen.storyboard */,
@@ -95,6 +106,7 @@
 		010791011EAD07F5001300BD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				016B34C41EAEBC60005066E7 /* LoginViewController.swift */,
 				010790FF1EAD07F1001300BD /* StadiumTableViewController.swift */,
 			);
 			name = Controller;
@@ -113,6 +125,7 @@
 			children = (
 				010790ED1EAD06AC001300BD /* Main.storyboard */,
 				019B4C791EAD0C3B0072C721 /* StadiumTableViewCell.swift */,
+				016B34C21EAEB9F2005066E7 /* StadiumWorldCupTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -120,10 +133,20 @@
 		010791061EAD088D001300BD /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				010790F01EAD06AC001300BD /* Model.xcdatamodeld */,
-				019B4C7B1EAD0E330072C721 /* StadiumModel.swift */,
+				016B34C61EAEC084005066E7 /* UserModel.swift */,
+				01C69AD91EAEAD8D0071D0B8 /* StadiumModel.swift */,
+				016B34CB1EAEC54C005066E7 /* StadiumDetailModel.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		016B34C81EAEC463005066E7 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				016B34C91EAEC488005066E7 /* AlertHelper.swift */,
+				016B34CD1EAEC678005066E7 /* RealmHelper.swift */,
+			);
+			name = Helper;
 			sourceTree = "<group>";
 		};
 		6290E37664B1493F4E4756EB /* Frameworks */ = {
@@ -257,7 +280,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -268,12 +291,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				010791041EAD0856001300BD /* MockableAPI.swift in Sources */,
-				010790F21EAD06AC001300BD /* Model.xcdatamodeld in Sources */,
+				016B34CE1EAEC678005066E7 /* RealmHelper.swift in Sources */,
+				01C69ADA1EAEAD8D0071D0B8 /* StadiumModel.swift in Sources */,
 				010790EA1EAD06AC001300BD /* AppDelegate.swift in Sources */,
 				019B4C7A1EAD0C3B0072C721 /* StadiumTableViewCell.swift in Sources */,
+				016B34C51EAEBC60005066E7 /* LoginViewController.swift in Sources */,
 				010791001EAD07F1001300BD /* StadiumTableViewController.swift in Sources */,
-				019B4C7C1EAD0E330072C721 /* StadiumModel.swift in Sources */,
-				019B4C781EAD09BE0072C721 /* AppConstants.swift in Sources */,
+				019B4C781EAD09BE0072C721 /* AppConstant.swift in Sources */,
+				016B34CC1EAEC54C005066E7 /* StadiumDetailModel.swift in Sources */,
+				016B34C71EAEC084005066E7 /* UserModel.swift in Sources */,
+				016B34CA1EAEC488005066E7 /* AlertHelper.swift in Sources */,
+				016B34C31EAEB9F2005066E7 /* StadiumWorldCupTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +429,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FHWP9WUJMV;
 				INFOPLIST_FILE = ChallengeMockableN/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.richardfrk.ChallengeMockableN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -415,6 +444,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FHWP9WUJMV;
 				INFOPLIST_FILE = ChallengeMockableN/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.richardfrk.ChallengeMockableN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,19 +474,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		010790F01EAD06AC001300BD /* Model.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				010790F11EAD06AC001300BD /* Model.xcdatamodel */,
-			);
-			currentVersion = 010790F11EAD06AC001300BD /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 010790DE1EAD06AC001300BD /* Project object */;
 }

@@ -10,10 +10,14 @@ import UIKit
 
 class StadiumTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var stadiumPhotoImageView: UIImageView!
+    @IBOutlet weak var stadiumNameLabel: UILabel!
+    @IBOutlet weak var stadiumDescriptionLabel: UILabel!
+    @IBOutlet weak var stadiumCityLabel: UILabel!
     
-    
-    public func configureCell() {
+    public func configureCell(data: StadiumModel) {
         
+        stadiumNameLabel.text = data.smName
     }
 
 }

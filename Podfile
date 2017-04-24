@@ -7,5 +7,15 @@ target 'ChallengeMockableN' do
 
   # Pods for ChallengeMockableN
   pod 'Alamofire', '4.4.0'
+  pod 'SwiftyJSON', '3.1.4'
+  pod 'RealmSwift', '2.6.2'
+  
+  post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['SWIFT_VERSION'] = '3.0'
+    end
+  end
+end
 
 end

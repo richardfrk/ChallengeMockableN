@@ -8,30 +8,59 @@
 
 import Foundation
 import Alamofire
-
-enum MockableResult {
-    
-    case success
-    case failure
-}
+import SwiftyJSON
 
 class MockableAPI {
     
-    class func getStadium() {
+    class func validateLogin(user: String, password: String, completionHandler: @escaping (UserModel)->()) {
         
-        Alamofire.request(AppConstants.baseURL+AppConstants.endpointStadium).responseJSON { response in
-            print(response.request)  // original URL request
-            print(response.response) // HTTP URL response
-            print(response.data)     // server data
-            print(response.result)   // result of response serialization
-            
-            if let JSON = response.result.value {
-                print("JSON: \(JSON)")
+        let vlParameters = [
+        "name": user,
+        "pass": password,
+        ]
+        
+        Alamofire.request(AppConstant.baseURL+AppConstant.endpointSignin, parameters:vlParameters).validate().responseJSON { response in
+        
+            switch response.result {
+            case .success(let value):
+                
+                completionHandler(UserModel(JSON(value)))
+                
+            case .failure(let error):
+                print("Problems with login. \(error)")
             }
         }
     }
     
-    class func getStadiumDetail() {
+    class func getStadium(completionHandler: @escaping (StadiumModel)->()) {
         
+        Alamofire.request(AppConstant.baseURL+AppConstant.endpointStadium).validate().responseJSON { response in
+
+            switch response.result {
+            case .success(let value):
+                
+                completionHandler(StadiumModel(JSON(value)))
+                
+            case .failure(let error):
+                
+                print("Problems with request. \(error)")
+            }
+        }
+    }
+    
+    class func getStadiumDetail(url: String, completionHandler: @escaping (StadiumDetailModel)->()) {
+        
+        Alamofire.request(url).validate().responseJSON { response in
+            
+            switch response.result {
+            case .success(let value):
+                
+                completionHandler(StadiumDetailModel(JSON(value)))
+                
+            case .failure(let error):
+                
+                print("Problems with request. \(error)")
+            }
+        }
     }
 }

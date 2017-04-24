@@ -10,16 +10,20 @@ import UIKit
 
 class StadiumTableViewController: UITableViewController {
     
-    var dataSource = [
-    "estadio01":"01",
-    "estadio02":"02"
-    ]
-
+    var dataSource: [StadiumModel]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        MockableAPI.getStadium()
+        loadData()
+    }
+    
+    public func loadData() {
         
+        MockableAPI.getStadium { (result) in
+            
+            self.dataSource.append(result)
+        }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -29,9 +33,9 @@ class StadiumTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: AppConstants.cellIDStadium, for: indexPath) as! StadiumTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: AppConstant.cellIDStadium, for: indexPath) as! StadiumTableViewCell
         
-        cell.configureCell()
+        cell.configureCell(data: (dataSource[indexPath.row]))
         
         return cell
     }
